@@ -18,6 +18,12 @@ import com.revature.model.EmployeeToken;
  * @author Revature LLC
  */
 public interface EmployeeRepository {
+
+	/**
+	 * return employee role
+	 */
+	public int CheckRole(int id);
+
 	
 	/**
 	 * Registers an employee in the database.

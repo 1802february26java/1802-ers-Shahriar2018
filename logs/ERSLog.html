@@ -1,0 +1,3518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:39:33 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:510)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 9 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:45:08 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>92</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:510)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 9 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:47:09 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: &quot;host:port:sid&quot; 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:535)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 9 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:48:37 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:49:57 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>775</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+</td></tr>
+
+<tr>
+<td>777</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1177</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:106)
+</td></tr>
+
+<tr>
+<td>1177</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:106</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 17:50:37 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>809</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:106)
+</td></tr>
+
+<tr>
+<td>812</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:106</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 18:05:32 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1171</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00947: not enough values
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+</td></tr>
+
+<tr>
+<td>1178</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">false</td>
+</tr>
+
+<tr>
+<td>1179</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>2252</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00947: not enough values
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+</td></tr>
+
+<tr>
+<td>2256</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:108</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 18:06:13 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>456</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Missing IN or OUT parameter at index:: 7
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+</td></tr>
+
+<tr>
+<td>460</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">false</td>
+</tr>
+
+<tr>
+<td>460</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>573</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Missing IN or OUT parameter at index:: 7
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+</td></tr>
+
+<tr>
+<td>575</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:108</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 18:07:08 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>812</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+</td></tr>
+
+<tr>
+<td>814</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">false</td>
+</tr>
+
+<tr>
+<td>815</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1416</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:48</td>
+<td title="Message">Exception creating a new customer</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+</td></tr>
+
+<tr>
+<td>1418</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:108</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 18:08:46 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>642</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:108</td>
+<td title="Message">true</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 19:11:49 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>952</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:129</td>
+<td title="Message">true</td>
+</tr>
+
+<tr>
+<td>953</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>2385</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:130</td>
+<td title="Message">true</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 19:15:08 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1453</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:132</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 19:15:59 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>513</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:132</td>
+<td title="Message">false</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 19:21:26 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>854</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:132</td>
+<td title="Message">true</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:13:16 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1896</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:106</td>
+<td title="Message">Error while selecting employee by employee username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:160)
+</td></tr>
+
+<tr>
+<td>1898</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:160</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:14:35 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1357</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:106</td>
+<td title="Message">Error while selecting employee by employee username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:160)
+</td></tr>
+
+<tr>
+<td>1359</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:160</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:18:27 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1372</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:160</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:40:34 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>804</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:105</td>
+<td title="Message">Error while selecting employee by employee username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:159)
+</td></tr>
+
+<tr>
+<td>806</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:41:02 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>623</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:160</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:52:40 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>884</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:53:18 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>601</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 20:56:19 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 21:05:25 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>786</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 21:06:44 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>731</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [firstName=null, lastName=null, username=null, password=null, email=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 21:07:29 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>571</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:159</td>
+<td title="Message">Employee [firstName=null, lastName=null, username=null, password=null, email=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 21:12:31 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1032</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:188</td>
+<td title="Message">Employee [firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 19 21:13:50 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>617</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:189</td>
+<td title="Message">Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE], getId()=8, getFirstName()=FAHIM, getLastName()=GLOWS, getUsername()=fahimglows, getPassword()=4551EDFDC14DFFC7FE309E485141F4C5, getEmail()=mohammed2018@gmail.com, getEmployeeRole()=EmployeeRole [id=1, type=EMPLOYEE], hashCode()=436443873, getClass()=class com.revature.model.Employee, toString()=com.revature.model.Employee@1a039ae1]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:03:49 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1072</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:115</td>
+<td title="Message">Error while selecting employee by employee username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:207)
+</td></tr>
+
+<tr>
+<td>1073</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:207</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:23:38 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>652</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:103</td>
+<td title="Message">moving on to sql 1</td>
+</tr>
+
+<tr>
+<td>701</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:116</td>
+<td title="Message">Exceptiong selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:208)
+</td></tr>
+
+<tr>
+<td>703</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:208</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:24:36 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>675</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">/n moving on to sql 1 /n</td>
+</tr>
+
+<tr>
+<td>676</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:104</td>
+<td title="Message">/n moving on to sql 2 /n</td>
+</tr>
+
+<tr>
+<td>713</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:117</td>
+<td title="Message">Exceptiong selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:209)
+</td></tr>
+
+<tr>
+<td>715</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:209</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:27:44 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>696</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">/n moving on to sql 1 /n</td>
+</tr>
+
+<tr>
+<td>697</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">/n moving on to sql 2 /n</td>
+</tr>
+
+<tr>
+<td>736</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:118</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+</td></tr>
+
+<tr>
+<td>738</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:210</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:28:41 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>729</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">/n moving on to sql 1 /n</td>
+</tr>
+
+<tr>
+<td>730</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>771</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:118</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+</td></tr>
+
+<tr>
+<td>772</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:210</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:30:37 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>672</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>672</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:107</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>720</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:118</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+</td></tr>
+
+<tr>
+<td>721</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:210</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:32:13 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>735</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>759</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>782</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:119</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+</td></tr>
+
+<tr>
+<td>784</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:211</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:32:45 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>637</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>658</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:119</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column index
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:5223)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:5210)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+</td></tr>
+
+<tr>
+<td>660</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:211</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:33:37 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>632</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>649</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:119</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column index
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:5223)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:5210)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+</td></tr>
+
+<tr>
+<td>651</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:211</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:34:11 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>659</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>682</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>704</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:119</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+</td></tr>
+
+<tr>
+<td>705</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:211</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:38:24 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>632</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>652</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>676</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:119</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+</td></tr>
+
+<tr>
+<td>678</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:211</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:39:19 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>821</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>844</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>868</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:120</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+</td></tr>
+
+<tr>
+<td>869</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:212</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:40:12 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>637</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>652</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>674</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:120</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+</td></tr>
+
+<tr>
+<td>675</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:212</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:41:02 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>629</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>650</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:110</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>676</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:120</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+</td></tr>
+
+<tr>
+<td>678</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:212</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:44:28 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>775</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>799</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:111</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>820</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:121</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:213)
+</td></tr>
+
+<tr>
+<td>823</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:213</td>
+<td title="Message">Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:45:22 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>858</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:94</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1403</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:111</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>1403</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:113</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>1421</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:213</td>
+<td title="Message">Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE]]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 06:54:19 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1086</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:138</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1113</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:156</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>1134</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:227</td>
+<td title="Message">Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE]]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:18:55 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1061</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:178</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1087</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:196</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:22:03 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>9769</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:178</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>9788</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:196</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:25:35 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>795</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:178</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>829</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:196</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:26:30 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>658</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:178</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>684</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:196</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:36:48 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1066</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:177</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1113</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:204</td>
+<td title="Message">Exception selecting employee by employeeId.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: ResultSet.next was not called
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedScrollableResultSet.getString(GeneratedScrollableResultSet.java:874)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.selectAll(EmployeeRepositoryJDBC.java:194)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:253)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:37:06 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1182</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:177</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1206</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:195</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 20 07:40:29 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1375</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:177</td>
+<td title="Message">
+ moving on to sql 1 
+</td>
+</tr>
+
+<tr>
+<td>1400</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:195</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+
+<tr>
+<td>1421</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:195</td>
+<td title="Message">
+ moving on to sql 2 
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Mar 22 07:20:25 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>2347</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.EmployeeRepositoryJDBC category">com.revature.repository.EmployeeRepositoryJDBC</td>
+<td>EmployeeRepositoryJDBC.java:324</td>
+<td title="Message">4551EDFDC14DFFC7FE309E485141F4C5</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 26 19:13:46 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>1121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:157</td>
+<td title="Message">null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 26 19:20:22 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>494</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:158</td>
+<td title="Message">null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 26 19:22:57 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>538</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:166</td>
+<td title="Message">null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 26 19:24:12 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>606</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:166</td>
+<td title="Message">null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Mar 26 19:25:19 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:27</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>565</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:166</td>
+<td title="Message">null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 27 23:59:22 CDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:28</td>
+<td title="Message">Connection successful</td>
+</tr>
+
+<tr>
+<td>556</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.ReimbursementRepositoryJDBC category">com.revature.repository.ReimbursementRepositoryJDBC</td>
+<td>ReimbursementRepositoryJDBC.java:212</td>
+<td title="Message">Reimbursement [id=12, requested=null, resolved=null, amount=4000.0, description=null, requester=null, approver=null, status=ReimbursementStatus [id=0, status=APPROVED], type=ReimbursementType [id=0, type=GAS]]</td>
+</tr>

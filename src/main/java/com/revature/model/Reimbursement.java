@@ -54,6 +54,8 @@ public class Reimbursement implements Serializable, Comparable<Reimbursement> {
 	 * FOREIGN KEY coming from EMPLOYEE, which represents the owner of the reimbursement (requester).
 	 */
 	private Employee requester;
+	private Employee firstname;
+	private Employee lastname;
 	
 	/**
 	 * This should be NULL when no one has approved the request yet.
@@ -90,6 +92,31 @@ public class Reimbursement implements Serializable, Comparable<Reimbursement> {
 		this.status = status;
 		this.type = type;
 	}
+	public Reimbursement(int id,  double amount,ReimbursementType type,ReimbursementStatus status) {
+		this.id = id;
+		
+		this.amount = amount;
+		
+		this.status = status;
+		this.type = type;
+	}
+	public Reimbursement(Employee requester,double amount,ReimbursementType type,ReimbursementStatus status) {
+	     this.amount = amount;
+		
+		this.status = status;
+		this.type = type;
+	}
+	/*public Reimbursement((
+			new Employee (rs.getString("U_FIRSTNAME"), rs.getString("U_LASTNAME")),
+			
+			d,
+			
+					new ReimbursementType(rs.getString("RT_TYPE")),
+			
+					new ReimbursementStatus(rs.getString("RS_STATUS"))
+					)) {
+		
+	}*/
 
 	public int getId() {
 		return id;

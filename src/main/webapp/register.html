@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Register</title>
 
     <link rel="icon" href="images/customer.ico" />
 
@@ -23,15 +23,18 @@
             <div class="navbar-header">
                 <a href="login.do" class="navbar-brand"><strong>Login</strong></a>
             </div>
-            <div class="nav navbar-nav navbar-right">
-                <a href="register.do" class="navbar-brand"><strong><small>Register</small></strong></a>
-            </div>
         </div>
     </nav>
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3>Authentication</h3>
+                <h3>Register</h3>
+            </div>
+            <div class="form-group">
+                <input id="firstName" name="firstName" placeholder="First name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input id="lastName" name="lastName" placeholder="Last name" class="form-control" />
             </div>
             <div class="form-group">
                 <input id="username" name="username" placeholder="Username" class="form-control" />
@@ -39,14 +42,16 @@
             <div class="form-group">
                 <input id="password" name="password" placeholder="Password" type="password" class="form-control password-large" />
             </div>
-            <div id="loginMessage"></div>
-            <button id="login" class="btn btn-md btn-success btn-block">Login</button>
+            <div class="form-group">
+                <input id="repeatPassword" placeholder="Repeat password" type="password" class="form-control password-large" />
+            </div>
+            <div id="registrationMessage"></div>
+            <button id="submit" class="btn btn-md btn-success btn-block">Submit</button>
             <div class="panel-footer">
-                <a>Forgot your password?</a>
             </div>
         </div>
     </div>
-    <!-- JavaScript Files -->
-    <script src="js/login.js"></script>
+    <!-- JavaScript files -->
+    <script src="js/register.js"></script>
 </body>
 </html>

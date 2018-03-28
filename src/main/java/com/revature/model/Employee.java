@@ -63,6 +63,21 @@ public class Employee implements Serializable, Comparable<Employee> {
 		this.email = email;
 		this.employeeRole = employeeRole;
 	}
+	public Employee( String firstName, String lastName, String username, String password, String email
+			) {
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
+		this.email = email;
+	
+	}
+	public Employee( String firstName, String lastName) {
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+}
 
 	public int getId() {
 		return id;
@@ -178,7 +193,7 @@ public class Employee implements Serializable, Comparable<Employee> {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", username=" + username
-				+ ", password=" + password + ", email=" + email + ", userRole=" + employeeRole + "]";
+				+ ", password=" + password + ", email=" + email + ", employeeRole=" + employeeRole + "]";
 	}
 
 	/**

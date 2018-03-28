@@ -29,8 +29,7 @@ public interface ReimbursementRepository {
 	
 	/**
 	 * Updates a reimbursement request status in the database.
-	 * 
-	 * It returns true if the reimbursement was updated successfully.
+	 * 	 * It returns true if the reimbursement was updated successfully.
 	 */
 	public boolean update(Reimbursement reimbursement);
 	
@@ -73,4 +72,5 @@ public interface ReimbursementRepository {
 	 * Returns a set of all reimbursement types.
 	 */
 	public Set<ReimbursementType> selectTypes();
+	
 }

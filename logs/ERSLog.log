@@ -1,0 +1,591 @@
+2018-03-19 17:39:34 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:510)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+2018-03-19 17:45:08 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:45:08 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:510)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+2018-03-19 17:47:09 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:47:09 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLRecoverableException: IO Error: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:33)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+Caused by: oracle.net.ns.NetException: Invalid connection string format, a valid format is: "host:port:sid" 
+	at oracle.net.resolver.AddrResolution.resolveSimple(AddrResolution.java:535)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:441)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+2018-03-19 17:48:37 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:49:57 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:49:58 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:105)
+2018-03-19 17:49:58 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:49:58 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:106)
+2018-03-19 17:49:58 TRACE EmployeeRepositoryJDBC:106 - false
+2018-03-19 17:50:37 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 17:50:38 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:106)
+2018-03-19 17:50:38 TRACE EmployeeRepositoryJDBC:106 - false
+2018-03-19 18:05:32 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:05:33 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLSyntaxErrorException: ORA-00947: not enough values
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+2018-03-19 18:05:33 TRACE EmployeeRepositoryJDBC:107 - false
+2018-03-19 18:05:33 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:05:34 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLSyntaxErrorException: ORA-00947: not enough values
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+2018-03-19 18:05:34 TRACE EmployeeRepositoryJDBC:108 - false
+2018-03-19 18:06:13 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:06:14 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLException: Missing IN or OUT parameter at index:: 7
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+2018-03-19 18:06:14 TRACE EmployeeRepositoryJDBC:107 - false
+2018-03-19 18:06:14 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:06:14 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLException: Missing IN or OUT parameter at index:: 7
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+2018-03-19 18:06:14 TRACE EmployeeRepositoryJDBC:108 - false
+2018-03-19 18:07:08 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:07:09 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:107)
+2018-03-19 18:07:09 TRACE EmployeeRepositoryJDBC:107 - false
+2018-03-19 18:07:09 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:07:09 WARN  EmployeeRepositoryJDBC:48 - Exception creating a new customer
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MOHAMMED2018.UNQ_USERNAME) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJDBC.insert(EmployeeRepositoryJDBC.java:44)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:108)
+2018-03-19 18:07:09 TRACE EmployeeRepositoryJDBC:108 - false
+2018-03-19 18:08:47 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 18:08:47 TRACE EmployeeRepositoryJDBC:108 - true
+2018-03-19 19:11:49 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 19:11:50 TRACE EmployeeRepositoryJDBC:129 - true
+2018-03-19 19:11:50 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 19:11:52 TRACE EmployeeRepositoryJDBC:130 - true
+2018-03-19 19:15:09 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 19:15:10 TRACE EmployeeRepositoryJDBC:132 - false
+2018-03-19 19:15:59 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 19:16:00 TRACE EmployeeRepositoryJDBC:132 - false
+2018-03-19 19:21:26 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 19:21:27 TRACE EmployeeRepositoryJDBC:132 - true
+2018-03-19 20:13:16 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:13:18 ERROR EmployeeRepositoryJDBC:106 - Error while selecting employee by employee username.
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:92)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:160)
+2018-03-19 20:13:18 TRACE EmployeeRepositoryJDBC:160 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:14:35 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:14:37 ERROR EmployeeRepositoryJDBC:106 - Error while selecting employee by employee username.
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:92)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:160)
+2018-03-19 20:14:37 TRACE EmployeeRepositoryJDBC:160 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:18:27 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:18:28 TRACE EmployeeRepositoryJDBC:160 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:40:34 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:40:35 ERROR EmployeeRepositoryJDBC:105 - Error while selecting employee by employee username.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:102)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:159)
+2018-03-19 20:40:35 TRACE EmployeeRepositoryJDBC:159 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:41:02 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:41:03 TRACE EmployeeRepositoryJDBC:160 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:52:40 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:52:41 TRACE EmployeeRepositoryJDBC:159 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:53:18 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:53:19 TRACE EmployeeRepositoryJDBC:159 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 20:56:19 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 20:56:20 TRACE EmployeeRepositoryJDBC:159 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 21:05:25 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 21:05:25 TRACE EmployeeRepositoryJDBC:159 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, userRole=null]
+2018-03-19 21:06:44 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 21:06:44 TRACE EmployeeRepositoryJDBC:159 - Employee [firstName=null, lastName=null, username=null, password=null, email=null]
+2018-03-19 21:07:29 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 21:07:30 TRACE EmployeeRepositoryJDBC:159 - Employee [firstName=null, lastName=null, username=null, password=null, email=null]
+2018-03-19 21:12:31 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 21:12:32 TRACE EmployeeRepositoryJDBC:188 - Employee [firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com]
+2018-03-19 21:13:50 INFO  ConnectionUtil:27 - Connection successful
+2018-03-19 21:13:50 TRACE EmployeeRepositoryJDBC:189 - Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE], getId()=8, getFirstName()=FAHIM, getLastName()=GLOWS, getUsername()=fahimglows, getPassword()=4551EDFDC14DFFC7FE309E485141F4C5, getEmail()=mohammed2018@gmail.com, getEmployeeRole()=EmployeeRole [id=1, type=EMPLOYEE], hashCode()=436443873, getClass()=class com.revature.model.Employee, toString()=com.revature.model.Employee@1a039ae1]
+2018-03-20 06:03:49 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:03:50 ERROR EmployeeRepositoryJDBC:115 - Error while selecting employee by employee username.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:107)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:207)
+2018-03-20 06:03:50 TRACE EmployeeRepositoryJDBC:207 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:23:38 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:23:39 INFO  EmployeeRepositoryJDBC:103 - moving on to sql 1
+2018-03-20 06:23:39 ERROR EmployeeRepositoryJDBC:116 - Exceptiong selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:208)
+2018-03-20 06:23:39 TRACE EmployeeRepositoryJDBC:208 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:24:36 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:24:37 INFO  EmployeeRepositoryJDBC:94 - /n moving on to sql 1 /n
+2018-03-20 06:24:37 INFO  EmployeeRepositoryJDBC:104 - /n moving on to sql 2 /n
+2018-03-20 06:24:37 ERROR EmployeeRepositoryJDBC:117 - Exceptiong selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:109)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:209)
+2018-03-20 06:24:37 TRACE EmployeeRepositoryJDBC:209 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:27:44 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:27:45 INFO  EmployeeRepositoryJDBC:94 - /n moving on to sql 1 /n
+2018-03-20 06:27:45 INFO  EmployeeRepositoryJDBC:107 - /n moving on to sql 2 /n
+2018-03-20 06:27:45 ERROR EmployeeRepositoryJDBC:118 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+2018-03-20 06:27:45 TRACE EmployeeRepositoryJDBC:210 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:28:41 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:28:41 INFO  EmployeeRepositoryJDBC:94 - /n moving on to sql 1 /n
+2018-03-20 06:28:41 INFO  EmployeeRepositoryJDBC:107 - 
+ moving on to sql 2 
+
+2018-03-20 06:28:41 ERROR EmployeeRepositoryJDBC:118 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+2018-03-20 06:28:41 TRACE EmployeeRepositoryJDBC:210 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:30:37 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:30:38 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:30:38 INFO  EmployeeRepositoryJDBC:107 - 
+ moving on to sql 2 
+
+2018-03-20 06:30:38 ERROR EmployeeRepositoryJDBC:118 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:110)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:210)
+2018-03-20 06:30:38 TRACE EmployeeRepositoryJDBC:210 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:32:13 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:32:14 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:32:14 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:32:14 ERROR EmployeeRepositoryJDBC:119 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+2018-03-20 06:32:14 TRACE EmployeeRepositoryJDBC:211 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:32:45 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:32:46 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:32:46 ERROR EmployeeRepositoryJDBC:119 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:5223)
+	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:5210)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+2018-03-20 06:32:46 TRACE EmployeeRepositoryJDBC:211 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:33:37 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:33:37 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:33:37 ERROR EmployeeRepositoryJDBC:119 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:5223)
+	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:5210)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:108)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+2018-03-20 06:33:37 TRACE EmployeeRepositoryJDBC:211 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:34:11 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:34:12 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:34:12 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:34:12 ERROR EmployeeRepositoryJDBC:119 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+2018-03-20 06:34:12 TRACE EmployeeRepositoryJDBC:211 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:38:24 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:38:25 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:38:25 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:38:25 ERROR EmployeeRepositoryJDBC:119 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:211)
+2018-03-20 06:38:25 TRACE EmployeeRepositoryJDBC:211 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:39:19 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:39:20 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:39:20 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:39:20 ERROR EmployeeRepositoryJDBC:120 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+2018-03-20 06:39:20 TRACE EmployeeRepositoryJDBC:212 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:40:12 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:40:13 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:40:13 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:40:13 ERROR EmployeeRepositoryJDBC:120 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+2018-03-20 06:40:13 TRACE EmployeeRepositoryJDBC:212 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:41:02 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:41:03 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:41:03 INFO  EmployeeRepositoryJDBC:110 - 
+ moving on to sql 2 
+
+2018-03-20 06:41:03 ERROR EmployeeRepositoryJDBC:120 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:111)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:212)
+2018-03-20 06:41:03 TRACE EmployeeRepositoryJDBC:212 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:44:28 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:44:29 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:44:29 INFO  EmployeeRepositoryJDBC:111 - 
+ moving on to sql 2 
+
+2018-03-20 06:44:29 ERROR EmployeeRepositoryJDBC:121 - Exception selecting employee by employeeId.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.select(EmployeeRepositoryJDBC.java:112)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:213)
+2018-03-20 06:44:29 TRACE EmployeeRepositoryJDBC:213 - Employee [id=0, firstName=null, lastName=null, username=null, password=null, email=null, employeeRole=null]
+2018-03-20 06:45:22 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:45:23 INFO  EmployeeRepositoryJDBC:94 - 
+ moving on to sql 1 
+
+2018-03-20 06:45:24 INFO  EmployeeRepositoryJDBC:111 - 
+ moving on to sql 2 
+
+2018-03-20 06:45:24 INFO  EmployeeRepositoryJDBC:113 - 
+ moving on to sql 2 
+
+2018-03-20 06:45:24 TRACE EmployeeRepositoryJDBC:213 - Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE]]
+2018-03-20 06:54:19 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 06:54:20 INFO  EmployeeRepositoryJDBC:138 - 
+ moving on to sql 1 
+
+2018-03-20 06:54:20 INFO  EmployeeRepositoryJDBC:156 - 
+ moving on to sql 2 
+
+2018-03-20 06:54:20 TRACE EmployeeRepositoryJDBC:227 - Employee [id=8, firstName=FAHIM, lastName=GLOWS, username=fahimglows, password=4551EDFDC14DFFC7FE309E485141F4C5, email=mohammed2018@gmail.com, employeeRole=EmployeeRole [id=1, type=EMPLOYEE]]
+2018-03-20 07:18:55 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:18:57 INFO  EmployeeRepositoryJDBC:178 - 
+ moving on to sql 1 
+
+2018-03-20 07:18:57 INFO  EmployeeRepositoryJDBC:196 - 
+ moving on to sql 2 
+
+2018-03-20 07:22:04 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:22:13 INFO  EmployeeRepositoryJDBC:178 - 
+ moving on to sql 1 
+
+2018-03-20 07:22:13 INFO  EmployeeRepositoryJDBC:196 - 
+ moving on to sql 2 
+
+2018-03-20 07:25:35 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:25:36 INFO  EmployeeRepositoryJDBC:178 - 
+ moving on to sql 1 
+
+2018-03-20 07:25:36 INFO  EmployeeRepositoryJDBC:196 - 
+ moving on to sql 2 
+
+2018-03-20 07:26:30 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:26:30 INFO  EmployeeRepositoryJDBC:178 - 
+ moving on to sql 1 
+
+2018-03-20 07:26:30 INFO  EmployeeRepositoryJDBC:196 - 
+ moving on to sql 2 
+
+2018-03-20 07:36:48 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:36:49 INFO  EmployeeRepositoryJDBC:177 - 
+ moving on to sql 1 
+
+2018-03-20 07:36:49 ERROR EmployeeRepositoryJDBC:204 - Exception selecting employee by employeeId.
+java.sql.SQLException: ResultSet.next was not called
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getString(GeneratedScrollableResultSet.java:874)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJDBC.selectAll(EmployeeRepositoryJDBC.java:194)
+	at com.revature.repository.EmployeeRepositoryJDBC.main(EmployeeRepositoryJDBC.java:253)
+2018-03-20 07:37:06 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:37:08 INFO  EmployeeRepositoryJDBC:177 - 
+ moving on to sql 1 
+
+2018-03-20 07:37:08 INFO  EmployeeRepositoryJDBC:195 - 
+ moving on to sql 2 
+
+2018-03-20 07:40:29 INFO  ConnectionUtil:27 - Connection successful
+2018-03-20 07:40:31 INFO  EmployeeRepositoryJDBC:177 - 
+ moving on to sql 1 
+
+2018-03-20 07:40:31 INFO  EmployeeRepositoryJDBC:195 - 
+ moving on to sql 2 
+
+2018-03-20 07:40:31 INFO  EmployeeRepositoryJDBC:195 - 
+ moving on to sql 2 
+
+2018-03-22 07:20:25 INFO  ConnectionUtil:27 - Connection successful
+2018-03-22 07:20:27 TRACE EmployeeRepositoryJDBC:324 - 4551EDFDC14DFFC7FE309E485141F4C5
+2018-03-26 19:13:46 INFO  ConnectionUtil:27 - Connection successful
+2018-03-26 19:13:47 TRACE ReimbursementRepositoryJDBC:157 - 
+2018-03-26 19:20:22 INFO  ConnectionUtil:27 - Connection successful
+2018-03-26 19:20:22 TRACE ReimbursementRepositoryJDBC:158 - 
+2018-03-26 19:22:57 INFO  ConnectionUtil:27 - Connection successful
+2018-03-26 19:22:58 TRACE ReimbursementRepositoryJDBC:166 - 
+2018-03-26 19:24:12 INFO  ConnectionUtil:27 - Connection successful
+2018-03-26 19:24:13 TRACE ReimbursementRepositoryJDBC:166 - 
+2018-03-26 19:25:19 INFO  ConnectionUtil:27 - Connection successful
+2018-03-26 19:25:20 TRACE ReimbursementRepositoryJDBC:166 - 
+2018-03-27 23:59:22 INFO  ConnectionUtil:28 - Connection successful
+2018-03-27 23:59:23 TRACE ReimbursementRepositoryJDBC:212 - Reimbursement [id=12, requested=null, resolved=null, amount=4000.0, description=null, requester=null, approver=null, status=ReimbursementStatus [id=0, status=APPROVED], type=ReimbursementType [id=0, type=GAS]]

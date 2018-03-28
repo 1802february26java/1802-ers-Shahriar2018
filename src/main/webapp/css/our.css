@@ -1,0 +1,44 @@
+a {
+    cursor: pointer;
+}
+
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #d2d2d2;
+}
+
+.btn-block {
+    width: 50%;
+    margin: auto auto 10px;
+}
+
+.btn-list {
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 50%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.panel-default .panel-heading {
+    text-align: center;
+}
+
+.label-center {
+    display: block;
+    width: 50%;
+    margin: auto auto 10px;
+}
+
+.list-group-item {
+    text-align: center;
+}
