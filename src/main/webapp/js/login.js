@@ -38,9 +38,9 @@ function login(data) {
         document.getElementById("loginMessage").innerHTML = '<span class="label label-danger label-center">Wrong credentials.</span>';
     }
     else {
+    	console.log(data);
         //Using sessionStorage of JavaScript
-        sessionStorage.setItem("customerId", data.id);
-        sessionStorage.setItem("customerUsername", data.username);
+        sessionStorage.setItem("employee", JSON.stringify(data));
 
         //Redirect to Home page
         window.location.replace("home.do");
