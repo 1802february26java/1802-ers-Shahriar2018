@@ -19,18 +19,18 @@ import com.revature.util.ConnectionUtil;
 
 public class EmployeeRepositoryJDBC implements EmployeeRepository{
 	private static Logger logger = Logger.getLogger(EmployeeRepositoryJDBC.class);
-	
-	
+
+
 	/*Singleton transformation of JDBC implementation object */
 	private static EmployeeRepositoryJDBC customerRepository=null;
-	
+
 	private EmployeeRepositoryJDBC() {}
-	
+
 	public static EmployeeRepositoryJDBC getInstance() {
 		if(customerRepository == null) {
 			customerRepository = new EmployeeRepositoryJDBC();
 		}
-		
+
 		return customerRepository;
 	}
 
@@ -39,7 +39,7 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 		try(Connection connection = ConnectionUtil.getConnection()) {
 			int statementIndex = 0;
 			String command = "INSERT INTO USER_T VALUES(null,?,?,?,?,?,?)";
-            PreparedStatement statement = connection.prepareStatement(command);
+			PreparedStatement statement = connection.prepareStatement(command);
 			statement.setString(++statementIndex, employee.getFirstName().toUpperCase());
 			statement.setString(++statementIndex, employee.getLastName().toUpperCase());
 			statement.setString(++statementIndex, employee.getUsername().toLowerCase());
@@ -58,44 +58,44 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 
 	@Override
 	public boolean update(Employee employee) {
-   try(Connection connection = ConnectionUtil.getConnection()) {
-		
-		int statementIndex = 0;
-		
-		String sql = "UPDATE USER_T SET U_FIRSTNAME = ?, U_LASTNAME = ?,"
-				+ " U_PASSWORD = ?, U_EMAIL = ? WHERE U_USERNAME = ?";
+		try(Connection connection = ConnectionUtil.getConnection()) {
 
-		PreparedStatement statement = connection.prepareStatement(sql);
-		
-		statement.setString(++statementIndex, employee.getFirstName());
-		statement.setString(++statementIndex, employee.getLastName());
-		statement.setString(++statementIndex, employee.getPassword());
-		statement.setString(++statementIndex, employee.getEmail());
-		statement.setString(++statementIndex,employee.getUsername().toLowerCase());
+			int statementIndex = 0;
 
-		if(statement.executeUpdate() > 0) {
-			return true;
+			String sql = "UPDATE USER_T SET U_FIRSTNAME = ?, U_LASTNAME = ?,"
+					+ " U_PASSWORD = ?, U_EMAIL = ? WHERE U_USERNAME = ?";
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+
+			statement.setString(++statementIndex, employee.getFirstName());
+			statement.setString(++statementIndex, employee.getLastName());
+			statement.setString(++statementIndex, employee.getPassword());
+			statement.setString(++statementIndex, employee.getEmail());
+			statement.setString(++statementIndex,employee.getUsername().toLowerCase());
+
+			if(statement.executeUpdate() > 0) {
+				return true;
+			}
+		} catch (SQLException e) {
+			logger.error("Update wasn't succefull!!!", e);
 		}
-	} catch (SQLException e) {
-		logger.error("Update wasn't succefull!!!", e);
-	}
-	return false;
+		return false;
 	}
 
 	@Override
 	public Employee select(int employeeId) {
-		    try(Connection connection = ConnectionUtil.getConnection()) {
-			
+		try(Connection connection = ConnectionUtil.getConnection()) {
+
 			int parameterIndex = 0;
-			
+
 			String sql = "SELECT * FROM USER_T WHERE U_ID = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
+
 			statement.setInt(++parameterIndex, employeeId);
-			
+
 			ResultSet rs = statement.executeQuery();
 			//logger.info("\n moving on to sql 1 \n");
-		while(rs.next()) {
+			while(rs.next()) {
 				int id = rs.getInt("U_ID");
 				String firstName = rs.getString("U_FIRSTNAME");
 				String lastName = rs.getString("U_LASTNAME");
@@ -106,7 +106,7 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 				int roleId = rs.getInt("UR_ID");
 				String sql2 = "SELECT UR_TYPE FROM USER_ROLE WHERE UR_ID =?";
 				PreparedStatement statement2 = connection.prepareStatement(sql2);
-				
+
 				statement2.setInt(1, roleId);
 				ResultSet rs2 = statement2.executeQuery();
 				rs2.next();
@@ -115,99 +115,103 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 				//logger.info("\n moving on to sql 2 \n");
 				EmployeeRole employeeRole = new EmployeeRole(roleId, role);
 				return new Employee(id, firstName, lastName, username, password, email, employeeRole);
-			
-				}
-		  }
-		 catch (SQLException e) {
+
+			}
+		}
+		catch (SQLException e) {
 			logger.error("Exception selecting employee by employeeId.", e);
 		}
-			return new Employee();
-		  
+		return new Employee();
+
 	}
 
 	@Override
 	public Employee select(String username) {
-	    try(Connection connection = ConnectionUtil.getConnection()) {
-			
+		Employee e1=new Employee();
+		try(Connection connection = ConnectionUtil.getConnection()) {
+
 			int parameterIndex = 0;
-			
+
 			String sql = "SELECT * FROM USER_T WHERE U_USERNAME = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
+
 			statement.setString(++parameterIndex, username);
-			
+
 			ResultSet rs = statement.executeQuery();
-			logger.info("\n moving on to sql 1 \n");
-		if(rs.next()) {
+			//logger.info("\n moving on to sql 1 \n");
+			if(rs.next()) {
 				int id = rs.getInt("U_ID");
 				String firstName = rs.getString("U_FIRSTNAME");
 				String lastName = rs.getString("U_LASTNAME");
-				      username = rs.getString("U_USERNAME");
+				username = rs.getString("U_USERNAME");
 				String password = rs.getString("U_PASSWORD");
 				String email = rs.getString("U_EMAIL");
 				String role = null;
 				int roleId = rs.getInt("UR_ID");
 				String sql2 = "SELECT UR_TYPE FROM USER_ROLE WHERE UR_ID =?";
 				PreparedStatement statement2 = connection.prepareStatement(sql2);
-				
+
 				statement2.setInt(1, roleId);
 				ResultSet rs2 = statement2.executeQuery();
 				rs2.next();
 				//logger.info("\n moving on to sql 2 \n");
 				role = rs2.getString("UR_TYPE");
-				logger.info("\n moving on to sql 2 \n");
+				//logger.info("\n moving on to sql 2 \n");
 				EmployeeRole employeeRole = new EmployeeRole(roleId, role);
+				logger.trace("About to return");
 				return new Employee(id, firstName, lastName, username, password, email, employeeRole);
-			
-				}
-		  else
-				return null;}
-		 catch (SQLException e) {
+
+			}
+			else {
+				return null;
+			}
+		}
+		catch (SQLException e) {
 			logger.error("Exception selecting employee by employeeId.", e);
 		}
-			return new Employee();
+	return e1;
 	}
 
 	@Override
 	public Set<Employee> selectAll() {
 		HashSet<Employee> empSet = new HashSet<>();
-		   try(Connection connection = ConnectionUtil.getConnection()) {	
-				String sql = "SELECT * FROM USER_T ";
-				PreparedStatement statement = connection.prepareStatement(sql);
-				ResultSet rs = statement.executeQuery();
-				logger.info("\n moving on to sql 1 \n");
+		try(Connection connection = ConnectionUtil.getConnection()) {	
+			String sql = "SELECT * FROM USER_T ";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			ResultSet rs = statement.executeQuery();
+			logger.info("\n moving on to sql 1 \n");
 			while(rs.next()) {
-					int id = rs.getInt("U_ID");
-					String firstName = rs.getString("U_FIRSTNAME");
-					String lastName = rs.getString("U_LASTNAME");
-					String username = rs.getString("U_USERNAME");
-					String password = rs.getString("U_PASSWORD");
-					String email = rs.getString("U_EMAIL");
-					String role = null;
-					int roleId = rs.getInt("UR_ID");
-					String sql2 = "SELECT UR_TYPE FROM USER_ROLE WHERE UR_ID =?";
-					PreparedStatement statement2 = connection.prepareStatement(sql2);
-					
-					statement2.setInt(1, roleId);
-					ResultSet rs2 = statement2.executeQuery();
-					while(rs2.next()) {
-						//logger.info("\n moving on to sql 2 \n");
-						role = rs2.getString("UR_TYPE");
-						logger.info("\n moving on to sql 2 \n");
-						
-					}
-					
-					
-					EmployeeRole employeeRole = new EmployeeRole(roleId, role);
-					Employee emp=new Employee(id, firstName, lastName, username, password, email, employeeRole);
-				    empSet.add(emp);
-				   
-					}
-			  }
-			 catch (SQLException e) {
-				logger.error("Exception selecting employee by employeeId.", e);
+				int id = rs.getInt("U_ID");
+				String firstName = rs.getString("U_FIRSTNAME");
+				String lastName = rs.getString("U_LASTNAME");
+				String username = rs.getString("U_USERNAME");
+				String password = rs.getString("U_PASSWORD");
+				String email = rs.getString("U_EMAIL");
+				String role = null;
+				int roleId = rs.getInt("UR_ID");
+				String sql2 = "SELECT UR_TYPE FROM USER_ROLE WHERE UR_ID =?";
+				PreparedStatement statement2 = connection.prepareStatement(sql2);
+
+				statement2.setInt(1, roleId);
+				ResultSet rs2 = statement2.executeQuery();
+				while(rs2.next()) {
+					//logger.info("\n moving on to sql 2 \n");
+					role = rs2.getString("UR_TYPE");
+					logger.info("\n moving on to sql 2 \n");
+
+				}
+
+
+				EmployeeRole employeeRole = new EmployeeRole(roleId, role);
+				Employee emp=new Employee(id, firstName, lastName, username, password, email, employeeRole);
+				empSet.add(emp);
+
 			}
-				return empSet;
+		}
+		catch (SQLException e) {
+			logger.error("Exception selecting employee by employeeId.", e);
+		}
+		return empSet;
 	}
 
 	@Override
@@ -241,7 +245,7 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 			statement.setString(++parameterIndex, employeeToken.getToken());
 			statement.setTimestamp(++parameterIndex, Timestamp.valueOf(employeeToken.getCreationDate()));
 			statement.setInt(++parameterIndex, employeeToken.getRequester().getId());
-			
+
 			return statement.executeUpdate() > 0;
 		} catch (SQLException e) {
 			logger.error("SQLException in insertEmployeeToken(EmployeeToken) " + e);
@@ -259,9 +263,9 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 			PreparedStatement statement = connection.prepareStatement(sql);
 			int parameterIndex = 0;
 			statement.setInt(++parameterIndex, employeeToken.getId());
-			
+
 			return statement.executeUpdate() > 0;
-			
+
 		} catch (SQLException e) {
 			logger.error("SQLException in insertEmployeeToken(EmployeeToken) " + e);
 		}
@@ -285,7 +289,7 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 				LocalDateTime creationDate = result.getTimestamp("PR_TIME").toLocalDateTime();
 				int requesterId = result.getInt("U_ID");
 				Employee requester = select(requesterId);
-				
+
 				if(requester != null) {
 					return new EmployeeToken(id, token, creationDate, requester);
 				}
@@ -295,40 +299,40 @@ public class EmployeeRepositoryJDBC implements EmployeeRepository{
 		}
 		return null;
 	}
-	
-/*********************************Test Methods************************************************/
+
+	/*********************************Test Methods************************************************/
 	public static void main(String[] args) {
 		EmployeeRepositoryJDBC x=EmployeeRepositoryJDBC.getInstance();
-		                /*Test Insert()*/
-Employee emp = new Employee(5,"fahim","glows","fahimglows","2018","mohammed2018@gmail.com",new EmployeeRole(1,"EMPLOYEE"));
-//Employee emp2 = new Employee(50,"shahriar","glows","shahriarglows","2018","mohammed2018@gmail.com",new EmployeeRole(2,"Manager"));
-//logger.trace(x.insert(emp));
-//logger.trace(x.insert(emp2));
+		/*Test Insert()*/
+		Employee emp = new Employee(5,"fahim","glows","fahimglows","2018","mohammed2018@gmail.com",new EmployeeRole(1,"EMPLOYEE"));
+		//Employee emp2 = new Employee(50,"shahriar","glows","shahriarglows","2018","mohammed2018@gmail.com",new EmployeeRole(2,"Manager"));
+		//logger.trace(x.insert(emp));
+		//logger.trace(x.insert(emp2));
 
-		                /*Test update()*/
-//Employee emp2 = new Employee(50,"fahim","mohammed","shahriarglows","2018","mohammed2018@gmail.com",new EmployeeRole(2,"Manager"));
-//logger.trace(x.update(emp2));
-		
-		          /*Test select(int employeeId)*/ 
+		/*Test update()*/
+		//Employee emp2 = new Employee(50,"fahim","mohammed","shahriarglows","2018","mohammed2018@gmail.com",new EmployeeRole(2,"Manager"));
+		//logger.trace(x.update(emp2));
+
+		/*Test select(int employeeId)*/ 
 		//logger.trace(x.select(8));
-		
-		          /*Test select(String username)*/ 
-		        //logger.trace(x.select("fahimglows"));
-		
-		         /* Test Set<Employee> selectAll()*/
-//		Set<Employee> empSet2=x.selectAll(); 
-//        for (Employee temp : empSet2) {
-//	        System.out.println(temp+"\n");}
 
-             /* Test getPasswordHash*/
-logger.trace(x.getPasswordHash(emp));
+		/*Test select(String username)*/ 
+		//logger.trace(x.select("fahimglows"));
 
-	/*********************************TEST Methods************************************************/
-}
+		/* Test Set<Employee> selectAll()*/
+		//		Set<Employee> empSet2=x.selectAll(); 
+		//        for (Employee temp : empSet2) {
+		//	        System.out.println(temp+"\n");}
 
-@Override
-public int CheckRole(int id) {
-	
-	
-	return 0;
-}}
+		/* Test getPasswordHash*/
+		logger.trace(x.getPasswordHash(emp));
+
+		/*********************************TEST Methods************************************************/
+	}
+
+	@Override
+	public int CheckRole(int id) {
+
+
+		return 0;
+	}}

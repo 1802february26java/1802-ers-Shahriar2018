@@ -1,9 +1,17 @@
 package com.revature.request;
 
+import java.io.IOException;
+
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
+
 import com.revature.controller.ErrorControllerAlpha;
+import com.revature.controller.HomeControllerAlpha;
 import com.revature.controller.LoginControllerAlpha;
+
+
 
 /**
  * The RequestHelper class is consulted by the MasterServlet and provides
@@ -18,6 +26,8 @@ import com.revature.controller.LoginControllerAlpha;
  */
 public class RequestHelper {
 	private static RequestHelper requestHelper;
+    private static Logger logger = Logger.getLogger(RequestHelper.class);
+
 
 	private RequestHelper() {}
 
@@ -38,14 +48,27 @@ public class RequestHelper {
 	 * 		  The request object which contains the solicited URI.
 	 * @return A String containing the URI where the user should be
 	 * forwarded, or data (any object) for AJAX requests.
+	 * @throws ServletException 
+	 * @throws IOException 
 	 */
-	public Object process(HttpServletRequest request) {
+	public Object process(HttpServletRequest request) throws IOException, ServletException {
+		logger.trace("Entering switch-------");
 		switch(request.getRequestURI())
 		{
+		
+
 		case "/ERS/login.do":
-			return new LoginControllerAlpha().login(request);
+			logger.trace("Entering  login.do-------");
+			return LoginControllerAlpha.getInstance().login(request);
+			
 		case "/ERS/logout.do":
-			return new LoginControllerAlpha().logout(request);
+			return LoginControllerAlpha.getInstance().logout(request);
+		case "/ERS/home.do":
+			logger.trace("Entering home.do-------");
+			return  HomeControllerAlpha.getInstance().showEmployeeHome(request);
+			
+						
+				
 		default:
 			return new ErrorControllerAlpha().showError(request);
 		}
