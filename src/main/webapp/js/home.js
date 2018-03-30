@@ -1,11 +1,12 @@
 window.onload = () =>{
-	 //document.getElementById("username").innerHTML = sessionStorage.getItem("username");
 	let employee = JSON.parse(sessionStorage.getItem("employee"));
-	console.log(employee.username);
-	//var myJSON = sessionStorage.getItem(JSON.stringify("username"));
-	//var myObj = JSON.parse(myJSON);
-	//console.log(myObj);
+	console.log(employee.firstname);
+	
+	 document.getElementById("a1").innerHTML = employee.firstName;
+	 document.getElementById("a2").innerHTML = employee.lastName;
+	 document.getElementById("a3").innerHTML = employee.email;
+	 
 
-    //document.getElementById("loggedUsername").innerHTML === ;
+	
 	 
 }

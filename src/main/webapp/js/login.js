@@ -39,10 +39,10 @@ function login(data) {
     }
     else {
     	console.log(data);
-        //Using sessionStorage of JavaScript
+        
         sessionStorage.setItem("employee", JSON.stringify(data));
 
-        //Redirect to Home page
+      
         window.location.replace("home.do");
     }
 }
