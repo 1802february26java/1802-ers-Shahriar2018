@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import com.revature.controller.ErrorControllerAlpha;
 import com.revature.controller.HomeControllerAlpha;
 import com.revature.controller.LoginControllerAlpha;
+import com.revature.controller.ReimbursementControllerAlpha;
 
 
 
@@ -52,7 +53,7 @@ public class RequestHelper {
 	 * @throws IOException 
 	 */
 	public Object process(HttpServletRequest request) throws IOException, ServletException {
-		logger.trace("Entering switch-------");
+		logger.trace("Entering switch-------"+request.getRequestURI());
 		switch(request.getRequestURI())
 		{
 		
@@ -66,6 +67,13 @@ public class RequestHelper {
 		case "/ERS/home.do":
 			logger.trace("Entering home.do-------");
 			return  HomeControllerAlpha.getInstance().showEmployeeHome(request);
+			
+		case "/ERS/singleRequest.do":
+       return ReimbursementControllerAlpha.getInstance().singleRequest(request);
+		case "/ERS/multipleRequests.do":
+			logger.trace("Entering multipleRequests.do.------");
+
+			return ReimbursementControllerAlpha.getInstance().multipleRequests(request);
 			
 						
 				

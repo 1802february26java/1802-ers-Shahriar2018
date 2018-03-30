@@ -1,7 +1,7 @@
 window.onload = () =>{
 	 employee = JSON.parse(sessionStorage.getItem("employee"));
 	 eid = employee.id;
-	 //console.log('Employe id is ${{eid}}');
+	 console.log('Employe id is eid');
 
 	 document.getElementById("a1").innerHTML = employee.firstName;
 	 document.getElementById("a2").innerHTML = employee.lastName;
@@ -10,10 +10,10 @@ window.onload = () =>{
 	
 	 
 	    document.getElementById("pending").addEventListener("click", () => {
-		//sessionStorage.setItem("employeeId", eid);
-		window.location.replace("multipleRequests.do?x="  + eid);
-	});
-}
+sessionStorage.setItem(eid);
+window.location ="multipleRequests.do?x="  + eid;
+	    });
+	}
 
 
 	

@@ -22,8 +22,8 @@
 		
 		} */
     </style>
-   <link rel="stylesheet" href="css/My.css" />
-    <link rel="stylesheet" href="css/button.css" />
+   
+    <link rel="stylesheet" href="css/My.css" />
 </head>
 
  <body>
@@ -39,7 +39,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong id="strong">Reimbursement</strong><span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="submitRequest.do" >Submit a Reimbursement</a></li>
-                                <li><a href="multipleRequests.do" >Pending Reimbursements</a></li>
+                                <li><a href="multipleRequests.do" id="pending">Pending Reimbursements</a></li>
                                 <li><a href="multipleRequests.do?fetch=resolved">Resolved Reimbursements</a></li>
                             </ul>
                         </li>
@@ -68,8 +68,10 @@
     <td>Employee</td>
   
 </table>
+    
+    
+    
     </div>
-   <div > <button class="button big-btn" style="color:red " id="pending">Pending Reimbursements</button></div>
 
     
 </body>

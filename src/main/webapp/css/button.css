@@ -1,0 +1,14 @@
+  .button {
+       position:relative;
+    width:100px;
+    height:10px;
+    background:green;
+    left:350px;
+    top:50px;
+     text-align: center;
+     font-size: large;
+    }
+      .big-btn {
+        width: 300px;
+        height: 30px;
+    }

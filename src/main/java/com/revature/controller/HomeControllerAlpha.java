@@ -20,7 +20,7 @@ public class HomeControllerAlpha implements HomeController {
 	@Override
 	public String showEmployeeHome(HttpServletRequest request) {
 		
-        logger.trace("J:This is a update employee information method.");
+      
 		
         Employee loggedEmployee = (Employee) request.getSession().getAttribute("username");
 		
@@ -34,10 +34,12 @@ public class HomeControllerAlpha implements HomeController {
 		
 		//return back different home page based on the role
 		if(loggedEmployee.getEmployeeRole().getId() == 1){
+			  logger.trace("Entering home from  loggedEmployee.getEmployeeRole().getId() == 1");
 			return "EmployeePage.html";
 		}
 		
 		else{
+			  logger.trace("Entering home from  loggedEmployee.getEmployeeRole().getId() == 2");
 			return "HomeManager.html";
 		}
 	}

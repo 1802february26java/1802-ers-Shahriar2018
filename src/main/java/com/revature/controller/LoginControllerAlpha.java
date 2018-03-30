@@ -46,8 +46,8 @@ logger.info("about to authenticate \t"+new Employee(request.getParameter(FinalUt
 			return new ClientMessage(FinalUtil.LOGIN_FAIL);
 		}
 		
-		/* Store the customer information on the session */
-		request.getSession().setAttribute("username", loggedEmployee);
+		/* Store the user information on the session */
+		request.getSession().setAttribute("employee", loggedEmployee);
 		logger.trace("printing logged Employee /t:"+loggedEmployee);
 		
 		return loggedEmployee;
