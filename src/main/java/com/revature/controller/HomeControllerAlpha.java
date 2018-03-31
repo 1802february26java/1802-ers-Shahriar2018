@@ -20,14 +20,17 @@ public class HomeControllerAlpha implements HomeController {
 	@Override
 	public String showEmployeeHome(HttpServletRequest request) {
 		
+		
+logger.trace("In home controller Alpha now");
+
       
 		
-        Employee loggedEmployee = (Employee) request.getSession().getAttribute("username");
+        Employee loggedEmployee = (Employee) request.getSession().getAttribute("employee");
 		
 		/* If customer is not logged in */
 		if(loggedEmployee == null ) {
 		   
-			logger.trace("We do not have logged Employee information, return back to login page.");
+			logger.trace("We do not have logged Employee information");
 			return "login.html";
 			
 		}

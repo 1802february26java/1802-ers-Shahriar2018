@@ -4,7 +4,10 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
+
 import com.revature.controller.ReimbursementController;
+import com.revature.controller.ReimbursementControllerAlpha;
 import com.revature.model.Employee;
 import com.revature.model.Reimbursement;
 import com.revature.model.ReimbursementType;
@@ -12,6 +15,8 @@ import com.revature.repository.ReimbursementRepositoryJDBC;
 
 public class ReimbursementServiceAlpha implements ReimbursementService {
     private static ReimbursementServiceAlpha reimbursementService = new ReimbursementServiceAlpha();
+	private static Logger logger = Logger.getLogger(ReimbursementServiceAlpha.class);
+
 
 private ReimbursementServiceAlpha() { }
 	
@@ -39,7 +44,8 @@ private ReimbursementServiceAlpha() { }
 
 	@Override
 	public Set<Reimbursement> getUserPendingRequests(Employee employee) {
-		// TODO Auto-generated method stub
+		logger.trace("employeed Id is :"+employee.getId());
+		
 		return ReimbursementRepositoryJDBC.getInstance().selectPending(employee.getId());
 	}
 

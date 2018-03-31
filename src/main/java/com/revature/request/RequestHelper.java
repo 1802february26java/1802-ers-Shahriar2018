@@ -34,7 +34,9 @@ public class RequestHelper {
 
 	public static RequestHelper getRequestHelper() {
 		if(requestHelper == null) {
+			logger.trace("Request helper is NUll");
 			return new RequestHelper();
+			
 		}
 		else {
 			return requestHelper;
@@ -71,7 +73,7 @@ public class RequestHelper {
 		case "/ERS/singleRequest.do":
        return ReimbursementControllerAlpha.getInstance().singleRequest(request);
 		case "/ERS/multipleRequests.do":
-			logger.trace("Entering multipleRequests.do.------");
+			logger.trace("Inside multipleRequests.do.------");
 
 			return ReimbursementControllerAlpha.getInstance().multipleRequests(request);
 			
