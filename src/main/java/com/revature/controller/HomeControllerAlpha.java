@@ -21,7 +21,7 @@ public class HomeControllerAlpha implements HomeController {
 	public String showEmployeeHome(HttpServletRequest request) {
 		
 		
-logger.trace("In home controller Alpha now");
+		logger.trace("In Home ControllerAlpha Now");
 
       
 		

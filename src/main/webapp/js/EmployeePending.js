@@ -1,7 +1,7 @@
 window.onload = () =>{
 	 employee = JSON.parse(sessionStorage.getItem("employee"));
-	 eid = employee.id;
-	 console.log('Employe id is eid');
+	 //eid = employee.name;
+	 console.log(employee);
 
 	 document.getElementById("a1").innerHTML = employee.firstName;
 	 document.getElementById("a2").innerHTML = employee.lastName;
@@ -9,11 +9,11 @@ window.onload = () =>{
 	 document.getElementById("a4").innerHTML =employee.firstName;
 	
 	 
-	    document.getElementById("pending").addEventListener("click", () => {
-sessionStorage.setItem(eid);
-window.location ="multipleRequests.do?x="  + eid;
-	    });
-	}
+	 document.getElementById("pending").addEventListener("click", () => {
+		sessionStorage.setItem("eid",employee);
+		window.location ="multipleRequests.do?x="  + eid;
+	});
+}
 
 
 	

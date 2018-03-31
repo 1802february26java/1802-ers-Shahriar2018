@@ -126,7 +126,7 @@ logger.trace("Inserting reimbursement.");
 			String sql = "SELECT * FROM USER_T U, REIMBURSEMENT R, REIMBURSEMENT_TYPE RT, "
 					+ "REIMBURSEMENT_STATUS RS\r\n" + 
 					"WHERE R.RS_ID = RS.RS_ID AND R.RT_ID = RT.RT_ID AND R.EMPLOYEE_ID =U.U_ID "
-					+ "AND U_ID=? AND RS_STATUS='PENDING'";
+					+ "AND U_ID=? AND RS_STATUS='PENDING';";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setInt(1, employeeId);
 			ResultSet rs = statement.executeQuery();

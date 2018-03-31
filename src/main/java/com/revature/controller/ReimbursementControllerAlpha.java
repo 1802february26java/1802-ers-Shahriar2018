@@ -66,8 +66,11 @@ public class ReimbursementControllerAlpha implements ReimbursementController {
 
 		if(employee.getEmployeeRole().getId()==1){
 			logger.trace("Entering employee.......");
- return ReimbursementServiceAlpha.getInstance().getUserPendingRequests(employee);  
+			 if(request.getParameter("fetch") == null) {
+			     return "multipleRequests.html"; 
 			}
+		
+		}
 		return employee;
 
 			

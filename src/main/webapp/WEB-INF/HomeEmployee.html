@@ -15,32 +15,31 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-       /*  body {
+        body {
 			/* background image override */
 			background-image:  url(images/background.jpg);
 			background-size:   cover;
 		
-		} */
+		}
     </style>
-   
-    <link rel="stylesheet" href="css/My.css" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/our.css" />
 </head>
 
  <body>
- <script src="js/EmployeePending.js"></script>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="home.do" class="navbar-brand"><strong id="a4">WELCOME</strong></a>
+                <a href="home.do" class="navbar-brand"><strong>Hello, </strong><strong id="loggedUsername">Home</strong></a>
             </div>
             
             <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong id="strong">Reimbursement</strong><span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="submitRequest.do" >Submit a Reimbursement</a></li>
-                                <li><a href="multipleRequests.do" id="pending">Pending Reimbursements</a></li>
-                                <li><a href="multipleRequests.do?fetch=resolved">Resolved Reimbursements</a></li>
+                                <li><a href="submitRequest.do">Submit a Reimbursement</a></li>
+                                <li><a href="multipleRequests.do">View all pending reimbursements</a></li>
+                                <li><a href="multipleRequests.do?fetch=resolved">View all resolved reimbursements</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -49,25 +48,11 @@
                 <a href="logout.do" class="navbar-brand"><strong><small>Logout</small></strong></a>
             </div>
             <div class="nav navbar-nav navbar-right">
-           
+                <a href="viewInformation.do" class="navbar-brand"><strong><small>Profile</small></strong></a>
             </div>
         </div>
     </nav>
-    <div>
-    <table>
-  <tr>
-    <th>FirstName</th>
-    <th>LastName</th>
-    <th>Email</th>
-    <th>Employee Role</th>
-  </tr>
- 
-</table>
-    
-    
-    
-    </div>
 
-    
+    <script src="js/home.js"></script>
 </body>
 </html>
